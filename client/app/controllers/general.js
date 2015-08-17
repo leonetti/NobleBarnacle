@@ -180,9 +180,9 @@ angular.module('mimo.general', [])
            //TODO: Make the visual render when window changes size
            //settings for chart
            var margin = {top: 20, right: 90, bottom: 15, left: 150}
-             , width = window.innerWidth - margin.left - margin.right
+             , width = 1740 - margin.left - margin.right
              // width = window.innerWidth - 250
-             , height = window.innerHeight - 50 - margin.top - margin.bottom
+             , height = 600 - 50 - margin.top - margin.bottom
              // , height = window.innerHeight - 200
              , miniHeight = lanes.length * 12 + 50
              , mainHeight = height - miniHeight - 50;
