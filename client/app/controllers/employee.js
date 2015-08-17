@@ -130,8 +130,8 @@ angular.module('mimo.employee', [])
 
             //settings for chart
             var margin = {top: 20, right: 90, bottom: 15, left: 150}
-              , width = window.innerWidth - margin.left - margin.right
-              , height = window.innerHeight - 50 - margin.top - margin.bottom
+              , width = 1740 - margin.left - margin.right
+              , height = 600 - 50 - margin.top - margin.bottom
               , miniHeight = lanes.length * 12 + 50
               , mainHeight = height - miniHeight - 50;
 
