@@ -184,7 +184,7 @@ angular.module('mimo.general', [])
              // width = window.innerWidth - 250
              , height = 600 - 50 - margin.top - margin.bottom
              // , height = window.innerHeight - 200
-             , miniHeight = lanes.length * 12 + 50
+             , miniHeight = lanes.length * 12 + 70
              , mainHeight = height - miniHeight - 50;
 
            //time scale for the mini display

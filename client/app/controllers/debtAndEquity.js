@@ -135,7 +135,7 @@ angular.module('mimo.debtAndEquity', [])
             var margin = {top: 20, right: 90, bottom: 15, left: 150}
               , width = 1740 - margin.left - margin.right
               , height = 600 - 50 - margin.top - margin.bottom
-              , miniHeight = lanes.length * 12 + 50
+              , miniHeight = lanes.length * 12 + 70
               , mainHeight = height - miniHeight - 50;
 
             //time scale for the mini display
