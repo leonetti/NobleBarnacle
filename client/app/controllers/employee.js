@@ -110,10 +110,6 @@ angular.module('mimo.employee', [])
               }
             };
 
-
-
-
-
             // var general = [{"_id":"55ccd6fd30c686682d3c858e","_parentModel":"55ccd6fd30c686682d3c858d","title":"CEO","yearlySalary":150000,"__v":0,"endDate":{"year":2016,"month":"dec"},"startDate":{"year":2015,"month":"jan"}},{"_id":"55ccd6fd30c686682d3c858f","_parentModel":"55ccd6fd30c686682d3c858d","title":"CTO","yearlySalary":140000,"__v":0,"endDate":{"year":2016,"month":"dec"},"startDate":{"year":2015,"month":"apr"}},{"_id":"55ccd6fd30c686682d3c8590","_parentModel":"55ccd6fd30c686682d3c858d","title":"Frontend Developer","yearlySalary":100000,"__v":0,"endDate":{"year":2016,"month":"dec"},"startDate":{"year":2016,"month":"apr"}}]
 
             //set up the lanes
