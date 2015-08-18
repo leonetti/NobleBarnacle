@@ -1,0 +1,27 @@
+{
+  "name": "Benefit",
+  "plural": "Benefits",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "dollarsPerMonth": {
+      "type": "number",
+      "required": true
+    },
+    "increasePerYear": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

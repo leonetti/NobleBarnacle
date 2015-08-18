@@ -1,0 +1,32 @@
+{
+  "name": "GAndA",
+  "plural": "GAndAs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "money": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

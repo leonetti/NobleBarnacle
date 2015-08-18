@@ -1,0 +1,30 @@
+{
+  "name": "Employee",
+  "plural": "Employees",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "yearlySalary": {
+      "type": "number",
+      "required": true
+    },
+    "startDate": {
+      "type": "object",
+      "required": true
+    },
+    "endDate": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
