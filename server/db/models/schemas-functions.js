@@ -97,7 +97,9 @@ var DebtAndEquity = mongoose.model("DebtAndEquity", debtAndEquitySchema);
 var Product = mongoose.model("Product", productSchema);
 var Model = mongoose.model("Model", modelSchema);
 
-//Functions to add and delete items from an existing financial model are declared below (scaffolding)
+//Functions to add and delete items from an existing financial model should be declared below.
+
+//Functions to update the values for a model should be declared below. See http://mongoosejs.com/docs/2.7.x/docs/updating-documents.html
 
 var getModel = function(req, res){
   // username = req.body.username;
