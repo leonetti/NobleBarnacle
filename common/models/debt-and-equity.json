@@ -1,0 +1,37 @@
+{
+  "name": "DebtAndEquity",
+  "plural": "DebtsAndEquity",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "years": {
+      "type": [
+        "number"
+      ],
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "principal": {
+      "type": "number",
+      "required": true
+    },
+    "startYear": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
