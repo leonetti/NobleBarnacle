@@ -1,12 +1,26 @@
-angular.module('mimo.employee', [])
-  .controller('employeeController', function ($scope, dataFactory, employeeFactory){
-    $scope.data = dataFactory.model.expenses.employees;
-})
-  .factory('employeeFactory', function(){
-    employeeFactory = {};
+angular.module('mimo.employee', ['lbServices'])
+  .factory('employeeFactory', function(Employee){
+    employeeFactory = {
+      getEmployees: function(cb) {
+        Employee.find({filter: { limit: 10 }},function(response) {
+          cb(response);
+          // console.log(response);
+        }, function(error) {
+          
+        });
+      }
+    };
       //place code for manipulation the employee data here
 
     return employeeFactory;
+})
+  .controller('employeeController', function ($scope, employeeFactory){
+    //$scope.data = dataFactory.model.expenses.employees;
+    employeeFactory.getEmployees(function(data){
+      console.log(data);
+      // data.then();
+      $scope.data = data;    
+    });
 })
   .directive('d3Employee', ['$window', '$timeout', 'd3Service', 
     function($window, $timeout, d3Service) {
@@ -67,8 +81,10 @@ angular.module('mimo.employee', [])
               var items = [];
               general.forEach(function(item){
                 var newItem = {};
+                console.log(item)
                 var firstYear = parseInt(item.startDate.year);
                 var lastYear = parseInt(item.endDate.year);
+                // var lastYear = parseInt(2014);
 
                 var firstMonth = findFirstMonth(item, firstYear);
                 var lastMonth = findLastMonth(item, lastYear);
