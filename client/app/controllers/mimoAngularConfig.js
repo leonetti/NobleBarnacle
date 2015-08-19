@@ -15,7 +15,7 @@ var mimo = angular.module('mimo', [
   'mimo.debtAndEquity', //debtAndEquity.js
   'mimo.general', //general.js
   'mimo.revenue', //revenue.js
-  'mimo.products' //products.js
+  'mimo.products', //products.js
 ]);
 
 /*

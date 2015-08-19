@@ -1,0 +1,10 @@
+body{ 
+  background-image : url('http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/10.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+}
+
+#title {
+  color: white;
+}
