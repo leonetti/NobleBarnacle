@@ -68,12 +68,14 @@ mimo.factory('dataFactory', function ($http) {
   var dataFactory = {};
   dataFactory.madeServerRequest = false; //set to false initially
   dataFactory.getModel = function(){
+      // console.log("testing")
     return $http({
-      method: 'GET',
-      url: '/model' //end point in express server where the entire model is returned
+      method: 'GET'
+      // url: '/model' //end point in express server where the entire model is returned
     }).then(function(results){
       dataFactory.madeServerRequest = true; //set to true so only one request is made
       dataFactory.model = results.data; //return the entire model to the modelFacory object.
+      // console.log("RESULTS.DATA", results.data);
     });
   }
   //don't forget to return the dataFactory object so that it can be accessed. 
