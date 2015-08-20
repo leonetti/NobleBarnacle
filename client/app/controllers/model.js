@@ -1,6 +1,7 @@
 angular.module('mimo.model', [])
   .controller('modelController', function ($scope, dataFactory, modelFactory){
   $scope.data = dataFactory.model;
+
   /*
   getModel makes makes an http request to get the model data from the 
   database. However, it only makes an http request one time on page
